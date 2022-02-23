@@ -3,7 +3,16 @@ $(".drawer-icon").on("click", function (e) {
     e.preventDefault();
   
     $(".drawer-icon").toggleClass("is-active");
-    $(".drawer-content").slideToggle(200);
+    $(".drawer-content").slideToggle(300);
+  
+    return false;
+});
+
+$('.drawer-content, .drawer-items a').on('click', function(e) {
+    e.preventDefault();
+  
+    $('.drawer-icon').removeClass('is-active');
+    $(".drawer-content").slideToggle(300);
   
     return false;
 });
@@ -16,6 +25,7 @@ $('a[href*="#"]').click(function () {
   
     return false;
 });
+
 
 
 // 全て記入でボタンがactive

@@ -274,12 +274,12 @@ section {
 #hero {
   height: 98vh;
   width: 100%;
-  background: url(/img/fv-bgi_sp@2x.jpg) center/cover no-repeat;
+  background: url(./img/fv-bgi_sp@2x.jpg) center/cover no-repeat;
   margin-top: 74px;
 }
 @media (min-width: 768px) {
   #hero {
-    background: url(/img/fv-bgi@2x.jpg) center/cover no-repeat;
+    background: url(./img/fv-bgi@2x.jpg) center/cover no-repeat;
     height: 740px;
   }
 }

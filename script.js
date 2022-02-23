@@ -9,7 +9,7 @@ $(".drawer-icon").on("click", function (e) {
 });
 
 // スクロール
-$('.header-item a[href*="#"]').click(function () {
+$('a[href*="#"]').click(function () {
     var elmHash = $(this).attr("href"); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
     var pos = $(elmHash).offset().top - 74; //idの上部の距離からHeaderの高さを引いた値を取得
     $("body,html").animate({ scrollTop: pos }, 300); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
